@@ -1,0 +1,38 @@
+
+
+
+# bar graph with ids, salaries for 2 companies
+
+import matplotlib.pyplot as plt
+
+
+# Take employee data for 2 depts sal 
+x= [1001,1002,1003,1004,1005,1006]
+y= [10010,10020,10030,10040,10050,10060]
+
+
+# Take employee data for 2 depts production
+x= [100,100,100,100,100,100]
+y= [100000,200000,300000,400000,500000,600000]
+
+
+#create bar graph 
+plt.bar(x,y, label = 'Sales depts', color = 'red')
+
+plt.bar(x1,y1, label = 'Production depts', color = 'green ')
+
+
+#set x and y axis labels 
+plt.xlabel (' employee ids')
+plt.ylabel('employees salaries')
+
+
+#set company title
+plt.title('MICROSOFT INC ')
+
+# show legend
+plt.legend()
+
+
+#display the graph 
+plt.show()
